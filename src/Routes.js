@@ -15,13 +15,14 @@ import NotFound from './pages/NotFound';
 
 const Routes = () => (
   <Router>
-    <Switch>
+    <Base />
       {/* <Route path="/" component={Base} /> */}
-      <Route exact path="/" component={Home} />
-      <Route path="/login" component={Login} />
-      <Route path="/about" component={About} />
-      <Route path="/*" component={NotFound} />
-    </Switch>
+      <div className="w">
+        <Route exact path="/" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/about" component={About} />
+        {/* <Route path="*" component={NotFound} /> */}
+      </div>
   </Router>
 );
 
